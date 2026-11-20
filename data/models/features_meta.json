@@ -1,0 +1,28 @@
+{
+  "model_version": "iforest-v1.0",
+  "algorithm": "IsolationForest",
+  "n_estimators": 150,
+  "max_samples": 256,
+  "contamination": 0.05,
+  "feature_names": [
+    "method_code",
+    "endpoint_group_code",
+    "action_type_code",
+    "api_key_code",
+    "ip_scope_code",
+    "hour_of_day",
+    "is_weekend",
+    "requests_5m",
+    "unique_endpoints_15m",
+    "sensitive_action",
+    "has_approval_ref",
+    "failed_requests_5m",
+    "sequence_code"
+  ],
+  "train_samples": 1500,
+  "score_min": -0.6537383819839738,
+  "score_max": -0.48738904807795036,
+  "score_mean": -0.5483719411926141,
+  "calibrated_threshold": 0.65,
+  "trained_at": "2026-11-19T16:07:34.017330+00:00"
+}

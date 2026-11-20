@@ -1,0 +1,19 @@
+{
+  "policy_id": "POL-2026-FIN-001",
+  "title": "Mandatory Controls for Electronic Bank Account Updates",
+  "effective_date": "2026-01-01",
+  "rules": [
+    {
+      "rule_id": "E10-SEC-01",
+      "description": "Integration clients must operate within approved CIDR ranges specified in E04."
+    },
+    {
+      "rule_id": "E10-SEC-04",
+      "description": "Any modification to vendor bank account numbers requires verified independent Finance approval before execution."
+    },
+    {
+      "rule_id": "E10-SEC-09",
+      "description": "API mutations targeting administrative or batch payment execution endpoints are strictly prohibited."
+    }
+  ]
+}

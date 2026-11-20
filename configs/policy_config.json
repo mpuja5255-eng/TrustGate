@@ -1,0 +1,41 @@
+{
+  "policy_version": "2026.3.0",
+  "policy_name": "TRUSTGATE Financial & API Protection Policy",
+  "sensitive_action_rules": {
+    "bank_account_update": {
+      "sensitive_fields": ["bank_account_number", "routing_number", "iban", "swift"],
+      "requires_approval": true,
+      "approval_type": "FINANCE_INDEPENDENT",
+      "action_on_missing_approval": "HOLD",
+      "action_on_invalid_approval": "BLOCK"
+    },
+    "tax_id_update": {
+      "sensitive_fields": ["tax_id", "vat_number"],
+      "requires_approval": true,
+      "approval_type": "FINANCE_INDEPENDENT",
+      "action_on_missing_approval": "HOLD",
+      "action_on_invalid_approval": "BLOCK"
+    },
+    "high_value_payment_schedule": {
+      "sensitive_fields": ["payment_amount", "payee_account"],
+      "requires_approval": true,
+      "approval_type": "TREASURY_DUAL",
+      "action_on_missing_approval": "HOLD",
+      "action_on_invalid_approval": "BLOCK"
+    }
+  },
+  "prohibited_endpoints": [
+    "/v2/admin/export",
+    "/v2/system/config",
+    "/v2/payroll/execute",
+    "/v2/database/raw"
+  ],
+  "network_policy": {
+    "enforce_ip_whitelist": true,
+    "unregistered_ip_action": "HOLD"
+  },
+  "rate_limits": {
+    "max_requests_per_minute": 60,
+    "burst_threshold_5m": 30
+  }
+}

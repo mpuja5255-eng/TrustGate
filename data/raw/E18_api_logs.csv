@@ -1,0 +1,12 @@
+event_id,timestamp,request_id,api_key_id,source_ip,endpoint,method,status,vendor_id
+evt-001,2026-09-01T09:12:00Z,req-101,key-ops-01,10.20.10.15,/v2/vendors/V-0100,GET,200,V-0100
+evt-002,2026-09-01T10:15:30Z,req-102,key-ops-01,10.20.10.15,/v2/vendors/V-0100/contacts,PATCH,200,V-0100
+evt-003,2026-09-02T14:22:10Z,req-103,key-tb-07,10.20.4.12,/v2/vendors/V-0220,GET,200,V-0220
+evt-004,2026-09-02T14:25:00Z,req-104,key-tb-07,10.20.4.12,/v2/invoices/INV-9092,GET,200,V-0220
+evt-e18-0903-0142,2026-09-03T01:42:10Z,req-5f61b0de1,key-tb-07,10.20.4.77,/v2/vendors/V-0412,GET,200,V-0412
+evt-e18-0903-0143,2026-09-03T01:43:05Z,req-5f61b0de4,key-tb-07,10.20.4.77,/v2/vendors/V-0412/bank-details,GET,200,V-0412
+evt-e18-0903-0143b,2026-09-03T01:43:40Z,req-5f61b0de6,key-tb-07,10.20.4.77,/v2/vendors/V-0412/scheduled-payments,GET,200,V-0412
+evt-e18-0903-0144,2026-09-03T01:44:30Z,req-5f61b0de8,key-tb-07,10.20.4.77,/v2/vendors/V-0412/bank-details,PATCH,200,V-0412
+evt-005,2026-09-04T11:00:00Z,req-105,key-finance-02,10.30.1.20,/v2/invoices/INV-9095,GET,200,V-0300
+evt-006,2026-09-05T09:30:15Z,req-106,key-ops-01,10.20.10.15,/v2/vendors/V-0105/contacts,PATCH,200,V-0105
+evt-007,2026-09-07T16:45:00Z,req-107,key-tb-07,10.20.4.15,/v2/vendors/V-0412,GET,200,V-0412

@@ -1,0 +1,4 @@
+timestamp,source_ip,destination_ip,destination_port,protocol,bytes,host_label
+2026-09-03T01:40:00Z,10.20.4.77,10.100.1.50,443,TCP,1420,erp-sync-worker-01 (unverified)
+2026-09-03T01:44:30Z,10.20.4.77,10.100.1.50,443,TCP,4820,erp-sync-worker-01 (unverified)
+2026-09-03T01:46:12Z,10.20.4.77,198.51.100.22,8080,TCP,125000,external-relay (unverified)

@@ -1,0 +1,5 @@
+change_id,timestamp,request_id,vendor_id,field,old_value_masked,new_value_masked,changed_by,approval_ref
+chg-001,2026-09-01T10:15:30Z,req-102,V-0100,phone,+1-555-0100,+1-555-0199,API:key-ops-01,APP-OPS-8812
+chg-002,2026-09-03T01:44:30Z,req-5f61b0de8,V-0412,bank_account_number,****-1192,****-8841,API:key-tb-07,
+chg-003,2026-09-04T14:10:00Z,req-108,V-0220,bank_account_number,****-3341,****-9902,UI:finance_admin_1,FIN-APP-2026-09-441
+chg-004,2026-09-05T16:20:00Z,req-109,V-0300,bank_account_number,****-7711,****-4422,UI:procure_user_4,
